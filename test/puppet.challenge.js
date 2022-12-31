@@ -1,3 +1,8 @@
+// exploit is made by creating a false value on Uniswap pool
+// it devaluates the DVT token by deppositing a huge amount of DVT and maintaining the same ETH depposit
+// so, when the contract will calculate the ETH/DVT ratio, DVT will be cheaper
+// with DVT cheaper, the exploiter can get more DVT cheaper and uses it in the real market with real price
+
 const exchangeJson = require("../../build-uniswap-v1/UniswapV1Exchange.json");
 const factoryJson = require("../../build-uniswap-v1/UniswapV1Factory.json");
 
